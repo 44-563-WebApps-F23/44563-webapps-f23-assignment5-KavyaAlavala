@@ -13,6 +13,25 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light"
+        style="font-family:'Times New Roman', Times, serif; font-size: larger; font-size: larger;">
+        <a class="navbar-brand" href="cities.html">A Few Cities</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#InsectNavbarContent"
+            aria-controls="InsectNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggle-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="basic.html">Basic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="advanced.html">Advanced</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
   <style>
     body {background-color:white}
     h1   {color: rgb(129, 16, 16);}
@@ -45,7 +64,6 @@
   <img src=" Vizag.jpg"  class="img-fluid" alt="Vizag" width="400" height="400" >
   <img src=" LosAngeles.jpg" class="img-fluid" alt="LosAngeles" width="400" height="400">
 </div><br>
-<br>
 
 <div class="container">
 
@@ -132,5 +150,34 @@
           <button class="btn btn-danger">A</button>
       </div>
   </div>
+  <br>
+  <div class="dropdown" Style="position: relative; display: inline-block;">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+        <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
+    </div>
+  </div>
+  <br>
+  <form>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">City</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your city">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  <br>
+
 </body>
 </html>
